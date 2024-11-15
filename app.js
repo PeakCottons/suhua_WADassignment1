@@ -1,11 +1,13 @@
 const rentalManagement = require("./suhua_carRental");
-console.log("Startup successful");
+console.log("Startup successful!");
 
 rentalManagement.viewFleet();
 rentalManagement.viewOrders();
 
-console.log("Searching brand BMW...");
-rentalManagement.searchFleetForBrand("BMW");
+console.log('');
+
+// console.log("Searching brand BMW...");
+// rentalManagement.searchFleetForBrand("BMW");
 
 const newOrder = {
     orderID: 1001,
@@ -25,5 +27,6 @@ const newVehicle = {
 
 // rentalManagement.addNewOrder(newOrder);
 // rentalManagement.addNewVehicle(newVehicle);
-rentalManagement.completeOrder(1001);
+// rentalManagement.completeOrder(1001);
+// rentalManagement.removeVehicle(1);
 
